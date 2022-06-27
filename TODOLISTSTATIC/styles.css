@@ -1,0 +1,140 @@
+:root {
+    --night: black;
+    --night2: rgb(18, 17, 17); 
+    --light: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    background-color: var(--night2);
+    color: var(--light);
+}
+header {
+     max-width: 20vw;
+     width: 100%;
+     padding: 1em .4em;
+     display: flex;
+     justify-content: center;
+     align-self: center;
+}
+header h2 {
+    font-size: 2em;
+    font-weight: 800;
+    color: azure;
+    margin-bottom: 2rem;
+}
+.form-task {
+    display: flex;
+}
+input { 
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+}
+.form-task {
+    flex: 1 1 0%;
+    background-color: rgb(89, 89, 89);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #eee;
+}
+.form-task input {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 15vw;
+    font-weight: 300;
+}
+.form-task button {
+    width: 100px;
+    background-color: white;
+    color: black;
+    appearance: none;
+    border: none;
+    padding:12px;
+    outline: none;
+    transition: all 100ms ease-in;
+}
+.form-task button:hover {
+    color: white;
+    background-color: black;
+}
+.btn-submit {
+    margin-left: 1rem;
+}
+
+.form-task::placeholder{
+    color: #fff;
+}
+
+.show-txt {
+    color: #fff;
+    width: auto;
+}
+.list-tasks {
+    width: 100vw;
+    display: flex;
+    min-height: 40vh;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(75, 75, 75);
+    padding: 10px;
+    border-radius: 7px;
+}
+section h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(255, 214, 214);
+    letter-spacing: 1.5px;
+}
+
+.section-cmds {
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.edit-task, .delete-button, .check  {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    margin-right: 5px;
+    width: 120px;
+    border: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: all 152ms ease-in;
+}
+.section-cmds button:hover {
+    background-color: white;
+     color: black;
+    border: none;
+}
+
+.wrapper .show-txt:not(:read-only){
+    color: coral;
+    font-weight: 600;
+}
+.new-thang {
+    text-decoration: line-through;
+    color: black;
+}
+.show-txt {
+    font-size: 2rem;
+    font-weight: 600;
+}
